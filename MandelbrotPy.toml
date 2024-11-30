@@ -26,5 +26,12 @@ maintainers = [{
     name = "Amilly Wang",
     email = "amillyforph@outlook.com"
 }]
+keywords = ["Mandelbrot", "visualization"]
 
+[project.urls]
+Homepage = "https://github.com/AmillyW/MandelbrotPy_AW"
+Repository = "https://github.com/AmillyW/MandelbrotPy_AW"
 
+[tool.pytest.ini_options]
+minversion = "6.0"
+testpaths = ["test"]
