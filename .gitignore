@@ -163,3 +163,4 @@ cython_debug/
 
 # historic files
 .history
+.vscode
