@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-from Mandelbrot_Generate import MandelbrotSet
+from .Mandelbrot_Generate import MandelbrotSet
 
 
 class example_name(MandelbrotSet):
