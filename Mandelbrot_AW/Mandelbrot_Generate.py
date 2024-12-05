@@ -44,7 +44,10 @@ class MandelbrotSet:
                     "Invalid map option. Please choose either 'continuous' or 'discrete'."
                 )
 
-    def array_init(self):
+    def array_generate(self):
+        """
+        Assigning values to the initial 2D array.
+        """
         real = np.linspace(self.x_min, self.x_max, self.width)
         imag = np.linspace(self.y_min, self.y_max, self.height)
         mandelbrot_set = np.zeros((self.height, self.width))
