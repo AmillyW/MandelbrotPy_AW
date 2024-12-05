@@ -1,2 +1,2 @@
-# from .Mandelbrot_Generate import
-# from .Mandelbrot_Plot import
+from .Mandelbrot_Generate import MandelbrotSet
+from .Mandelbrot_Plot import Mandelbrot_Plot

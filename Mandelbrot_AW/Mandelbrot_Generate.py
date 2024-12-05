@@ -4,7 +4,7 @@ from .Mandelbrot_Discrete import MDB_MapRule_Discrete
 
 
 class MandelbrotSet:
-    def __init__(self, width, height, x_min, x_max, y_min, y_max):
+    def __init__(self, width, height, x_min, x_max, y_min, y_max, option):
         # Store the attributes needed to generate the Mandelbrot set
         """
         The Mandelbrot in your interesting attributes.
@@ -18,6 +18,7 @@ class MandelbrotSet:
         self.y_min = y_min
         self.y_max = y_max
         self.image = None
+        self.option = option
 
     def iteration(self, max_iter):
         """
@@ -28,7 +29,7 @@ class MandelbrotSet:
         """
         self.max_iter = max_iter
 
-    def map(self, c, option="continuous"):
+    def map(self, c, option):
         """
         The map from the initial 2D array to the Mandelbrot set:
         ----------
