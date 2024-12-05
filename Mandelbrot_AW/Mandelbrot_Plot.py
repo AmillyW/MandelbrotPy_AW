@@ -3,14 +3,15 @@ from .Mandelbrot_Generate import MandelbrotSet
 
 
 class example_name(MandelbrotSet):
-    def __init__(self, colormap, option):
+
+    def __init__(
+        self, max_iter, width, height, x_min, x_max, y_min, y_max, option, colormap
+    ):
         """
         Initialize the 'colormap' attribute and call the parent class of example_name, MandelbrotSet.
         """
-        super().__init__()
-        self.option = option
+        super().__init__(max_iter, width, height, x_min, x_max, y_min, y_max, option)
         self.colormap = colormap
-        self.image = None
         self.X, self.Y, self.image = self.array_generate()
 
 
